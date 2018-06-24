@@ -207,7 +207,7 @@ exports.randomPlay = function (req, res, next) {
 
     }else{
         almacen = req.session.quizzes;
-        if(ps.length === 0){
+        if(almacen.length === 0){
             var score = req.session.score;
 
             res.render('quizzes/random_nomore', {score: score});
